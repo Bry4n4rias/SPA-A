@@ -14,6 +14,7 @@ export class HeroeComponent {
     private _heroesService: HeroesService
   ) {
     this._activatedRoute.params.subscribe((params) => {
+      // observable del valor del url q le pasemos, en este caso observaremos el id q es lo mismo q el indice
       this.heroe = this._heroesService.getHeroe(params.id);
       console.log(this.heroe);
     });

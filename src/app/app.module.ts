@@ -28,7 +28,7 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     HeroeComponent,
     BuscadorComponent,
     HeroeTarjetaComponent,
-  ], // aca van todos los componente de renderizado
+  ], // aca van todos los componente de renderizado osea los html
   imports: [BrowserModule, FeatureRoutingModule, FormsModule, HttpClientModule], // aca van los componentes de rutas
   providers: [HeroesService], // aca van los servicios
   bootstrap: [AppComponent],

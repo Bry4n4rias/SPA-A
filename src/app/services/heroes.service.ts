@@ -67,7 +67,7 @@ export class HeroesService {
   }
 
   getHeroes() {
-    // esto quiere decir q retorna un arreglo de tipo heroe
+    // esto quiere decir q retorna un arreglo de tipo heroe, se hace asi pq arriba esta privado entonces hay q llamarlo desde aca con el metodo
     return this.heroes;
   }
   getHeroe(idx: string) {

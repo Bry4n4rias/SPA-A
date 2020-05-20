@@ -24,7 +24,7 @@
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Buscar heroe" aria-label="Search"
         (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
-      <!-- para hacer una busqueda primero creamos un alias, cuando le demos enter llamamos la funcion buscarHeroe y le pasamos el valor de ese alias, osea de este input, en el componente creamos la funcion -->
+      <!-- para hacer una busqueda con enter (keyup.enter) primero creamos un alias q seria #buscarTexto, cuando le demos enter llamamos la funcion buscarHeroe y le pasamos el valor de ese alias, osea de este input, en el componente creamos la funcion -->
       <button class="btn btn-outline-primary my-2 my-sm-0" type="button"
         (click)="buscarHeroe(buscarTexto.value)">Buscar</button>
       <!-- En este caso para buscar con el boton le damos con evento click y le ponemos la misma funcion y variable del input ya que es la q tiene el valor del campo -->

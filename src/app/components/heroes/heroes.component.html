@@ -3,9 +3,9 @@
 
 <div class="card-columns">
 
-  <!--  -->
+  <!-- ($event) es cuando recibe lo q esta emitiendo el padre en el ouput en este caso el inidce -->
   <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="elheroe" [indice]="i"
     *ngFor="let elheroe of heroes; let i = index">
-  </app-heroe-tarjeta>
+  </app-heroe-tarjeta> <!-- heroeSeleccionado hacer parte del event emiter del output -->
   <!-- [heroe] es la variable q recibimos del heroe-tarjeta-component ts, como se le puso @input puede ser utilizado aca -->
 </div>
