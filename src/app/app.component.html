@@ -1,1 +1,9 @@
+<!--Aca solamente van los componentes que son fijos para toads las paginas, osea el navbar, footer etc, el resto va en la routes-->
+<!-- Esto seria app-root  -->
+
 <app-navbar></app-navbar>
+
+<div class="container main-container">
+  <router-outlet></router-outlet>
+  <!--Asi no tendria q poner por ejemplo <app-heroes></app-heroes>, ya me asigna lo que va en las rutas, osea lo de heroes, home y about, osea dependiendo de la ruta me va mostrar el determinado componente-->
+</div>

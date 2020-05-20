@@ -1,0 +1,11 @@
+<h1>Heroes <small>Marvel y DC</small></h1>
+<hr>
+
+<div class="card-columns">
+
+  <!--  -->
+  <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="elheroe" [indice]="i"
+    *ngFor="let elheroe of heroes; let i = index">
+  </app-heroe-tarjeta>
+  <!-- [heroe] es la variable q recibimos del heroe-tarjeta-component ts, como se le puso @input puede ser utilizado aca -->
+</div>

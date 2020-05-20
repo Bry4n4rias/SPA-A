@@ -1,0 +1,12 @@
+<div class="card animated fadeIn-fast">
+  <img class=" card-img-top img-fluid" [src]="heroe.img" [alt]="heroe.nombre">
+  <div class="card-body">
+    <h5 class="card-title">{{heroe.nombre}}</h5>
+    <p class class="card-text">{{heroe.bio}}</p>
+    <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
+    <button (click)="verHeroe()" type="button" class="btn btn-outline-primary btn-block">Ver mas.</button>
+    <!--1 forma para redireccionar con botton = Para q mavegue a otra pagina dentro de la misma osea una subpagina; creamos el evento click y el nombre de la funcion y le pasamos el indice q se creo arriba en el ngfor, luego vamos al ts importmos el modulo Router, creamos el constructor con la variable q le pongamos q sea de tipo Router y abajo creamos la funcion tal como esta ahi -->
+    <!-- <a class="btn btn-outline-primary" [routerLink]="['/heroe', i]">Ver mas Link</a> -->
+    <!--2 forma para redireccionar con <a> = Para q mavegue a otra pagina dentro de la misma osea una subpagina ponemos / y la pagina y el id en este caso el indice, tambn hay q ponerlo en las rutas-->
+  </div>
+</div>
