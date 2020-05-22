@@ -1,5 +1,5 @@
-import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router'; // clases de dangular necesarias para trabjar con rutas
 
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
@@ -19,7 +19,7 @@ const routes: Routes = [
 // export const FeatureRoutingModule = RouterModule.forRoot(ROUTES);
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes)], // codigo de angular
+  exports: [RouterModule], // codigo de angular
 })
 export class FeatureRoutingModule {}

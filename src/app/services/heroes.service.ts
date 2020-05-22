@@ -75,6 +75,7 @@ export class HeroesService {
     return this.heroes[idx];
   }
   buscarHeroes(termino: string) {
+    //
     // esta funcion retorna un arreglo tipo Heroe
     const heroesArr: Heroe[] = []; // arreglo temporal que se mostrara cuando hagamos una busqueda, este arreglo no reemplaza la datqa del array
     termino = termino.toLowerCase();

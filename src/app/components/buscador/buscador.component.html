@@ -1,8 +1,8 @@
 <h1>Buscando a: <small>{{termino}}</small></h1>
 <hr>
 
+<!--se muestra este div si no coninciden los datos-->
 <div class="row" *ngIf="heroes.length == 0">
-  <!--se muestra este div si no coninciden los datos-->
   <div class="col-md-12">
     <div class="alert alert-info" role="alert">
       No existen resultados con el termino: {{termino}}
@@ -10,6 +10,7 @@
   </div>
 </div>
 
+<!--se muestra este div si si coninciden los datos-->
 <div class="card-columns">
   <app-heroe-tarjeta [heroe]="elheroe" [indice]="elheroe.idx" *ngFor="let elheroe of heroes"></app-heroe-tarjeta>
 
