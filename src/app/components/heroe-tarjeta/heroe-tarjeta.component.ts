@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./heroe-tarjeta.component.css'],
 })
 export class HeroeTarjetaComponent implements OnInit {
-  @Input() heroe: any = {}; // asi podemos utilziar esta variable en otros componentes
+  @Input() heroe: any = {}; // asi podemos utilziar esta variable en el componente padre o a la inversa en este caso con buscador-componente
   @Input() indice: number;
 
   @Output() heroeSeleccionado: EventEmitter<number>; // va emitir un number
